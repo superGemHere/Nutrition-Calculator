@@ -1,0 +1,52 @@
+body {
+    background-size: 100vw;
+    margin: auto;
+    padding: 0;
+    overflow: auto;
+    width: 100vw;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav {
+ 
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+
+#wrapper{
+    align-items:center;
+    justify-content:center;
+    display: flexbox;
+    justify-items: baseline;
+}
+nav a {
+    font-size: 1.5rem;
+    color: rgb(241, 10, 10);
+    font-weight: 400;  
+    text-shadow: 1px 1px black;
+  }
+
+  header a {
+    padding: 0 10px;
+    text-decoration: none;
+    
+    
+  }
+
+  nav a:hover {
+    color: rgb(224, 224, 210);
+   
+  }
+  
+
