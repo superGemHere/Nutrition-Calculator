@@ -1,11 +1,16 @@
 body {
-    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: auto;
     padding: 0;
     overflow: auto;
     width: 100vw;
     font-family: 'Bebas Neue', sans-serif;
   }
+ main{
+  display: flexbox;
+ }
+
 
   header {
     background-color: black;
@@ -20,6 +25,7 @@ body {
  
     display: flex;
     justify-content: space-between;
+    height: 45px;
     
   }
   
@@ -30,12 +36,17 @@ body {
     display: flexbox;
     justify-items: baseline;
 }
-nav a {
+  .menu-links {
+    padding-top: 5px;
     font-size: 1.5rem;
-    color: rgb(241, 10, 10);
+    color: rgb(189, 96, 96);
     font-weight: 400;  
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px rgb(176, 155, 155);
   }
+  .menu-links a {
+    color: aliceblue;
+  }
+
 
   header a {
     padding: 0 10px;
@@ -48,5 +59,45 @@ nav a {
     color: rgb(224, 224, 210);
    
   }
+
+  .container{
+    display: flex;
+    justify-items: center;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    font-family: arial;
+  }
   
+  /* .details-btn{
+    border: none;
+    outline: 0;
+    padding: 5px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 26%;
+    font-size: 18px;
+  } */
+  .add-btn{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
 
