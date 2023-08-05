@@ -1,23 +1,30 @@
 import {html, render} from "../lib.js";
 
+{/* <img src="${food.imgUrl}"></img> */}
 
-const catalogTemplate = (food) => html`<div class="card">
-<img src="${food.imgUrl}">
-<h1>${food.name}</h1>
-<p style="text-transform: capitalize;"><strong>Calories :</strong> ${food.calories} g <strong>Fat :</strong> ${food.fat} g <Strong>Protein</Strong> ${food.protein} g <Strong>Carbs</Strong> ${food.carbohydrates} g</p>
-<!-- <p><button class="details-btn">Details</button></p> -->
-<button class="add-btn">Calculate</button>
-</div>`;
+const catalogTemplate = (data) => html`
+${data.length > 0 
+? data.map( food => html`<div class="card">
+            <div>
+            <h1>${food.description}</h1>
+            <p style="text-transform: capitalize;"><strong>Calories :</strong> 24 g <strong>Fat :</strong> 13 g <Strong>Protein</Strong> 14 g <Strong>Carbs</Strong> 14 g</p>
+            <div>
+            <button class="add-btn">Calculate</button>
+            </div>
+        </div>
+        </div>`) 
+: html`<h1>There is no data to show.</h1>`}`;
 
 
 
 export const showCatalog = async () => {
     const data = await getData();
-    render(catalogTemplate(data), document.querySelector('main'));
+    console.log(data)
+    render(catalogTemplate(data), document.querySelector('main div.container'));
 }
 
 async function getData () {
-    const url = 'http://localhost:3030/data/foods/catalog';
+    const url = 'https://api.nal.usda.gov/fdc/v1/foods/list?api_key=DEMO_KEY';
     try {
         const response = await fetch(url);
         if (!response.ok){

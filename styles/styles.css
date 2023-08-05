@@ -61,8 +61,8 @@ body {
   }
 
   .container{
-    display: flex;
-    justify-items: center;
+    display: flexbox;
+    justify-content:space-between;
   }
 
   .card {
@@ -72,6 +72,7 @@ body {
     margin: 30px;
     text-align: center;
     font-family: arial;
+    float: left;
   }
   
   /* .details-btn{
