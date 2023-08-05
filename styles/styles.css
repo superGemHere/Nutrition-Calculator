@@ -1,11 +1,13 @@
 body {
+  background-color: bisque;
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
     padding: 0;
     overflow: auto;
-    width: 100vw;
+    width: 100%;
     font-family: 'Bebas Neue', sans-serif;
+    
   }
  main{
   display: flexbox;
@@ -31,11 +33,23 @@ body {
   
 
 #wrapper{
+  width: 100%;
     align-items:center;
     justify-content:center;
-    display: flexbox;
+    display: flex;
     justify-items: baseline;
 }
+  .fitness-modal{
+    padding-top: 5px;
+    font-size: 1.5rem;
+    color: rgb(189, 96, 96);
+    font-weight: 400;  
+    text-shadow: 1px 1px rgb(176, 155, 155);
+    float: right;
+  }
+  .fitness-modal a{
+    color: aliceblue;
+  }
   .menu-links {
     padding-top: 5px;
     font-size: 1.5rem;
@@ -68,13 +82,16 @@ body {
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 250px;
+    height: 75%;
     padding: 20px;
     margin: 30px;
     text-align: center;
     font-family: arial;
     float: left;
   }
-  
+  .add-btn{
+    overflow-y: hidden;
+  }
   /* .details-btn{
     border: none;
     outline: 0;
