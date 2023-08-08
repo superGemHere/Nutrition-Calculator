@@ -1535,32 +1535,6 @@
     			_id: "b8608c22-dd57-4b24-948e-b358f536b958"
     		}
     	},
-        foods : {
-            "01": {
-                name : "Asparagus",
-                calories : 22,
-                carbohydrates : 4.11,
-                fat : 0.22,
-                protein : 2.40,
-                imgUrl : "https://ogimarket.bg/image/catalog/product/-1-1.jpg"
-            },
-            "02": {
-                name : "White Fish",
-                calories : 89,
-                carbohydrates : 0,
-                fat : 1.20,
-                protein : 19.60,
-                imgUrl : "https://upload.wikimedia.org/wikipedia/commons/2/22/Coregonushoyi.jpg"
-            },
-            "03": {
-                name : "Sturgeon",
-                calories : 173,
-                carbohydrates : 0,
-                fat : 4.40,
-                protein : 31.20,
-                imgUrl : "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/%D0%91%D1%96%D0%BB%D1%83%D0%B3%D0%B0_%28Huso_huso%29.jpg/800px-%D0%91%D1%96%D0%BB%D1%83%D0%B3%D0%B0_%28Huso_huso%29.jpg"
-            }
-        },
     	catalog: {
     		"53d4dbf5-7f41-47ba-b485-43eccb91cb95": {
     			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",

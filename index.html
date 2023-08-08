@@ -14,17 +14,18 @@
             <nav>
                 <div class="menu-links" style="display: block;">
                     <a href="/">Home</a>
-                    <a href="/catalog">My Fitness Calculator</a>
+                    <a href="/catalog">Catalog</a>
                 </div>
                 <div class="fitness-modal">
-                    <a href="/my-macros">My macro's.</a>
+                    <a href="/my-macros">My macros.</a>
                 </div>
             </nav>
+            <button id="deleteNutrition">Delete Nutrition Data</button>
         </div>
     </header>
 
     <main>
-        <div class="container">
+        <!-- <div class="container">
         <div class="card">
             <div>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/%D0%91%D1%96%D0%BB%D1%83%D0%B3%D0%B0_%28Huso_huso%29.jpg/800px-%D0%91%D1%96%D0%BB%D1%83%D0%B3%D0%B0_%28Huso_huso%29.jpg" alt="Sturgeon" style="width:100%">
@@ -56,6 +57,12 @@
         </div>
         </div>
     </div>
+    </div> -->
+    <div id="my-macrosDiv">
+        <div id="my-macroContainer">
+            <h1>My macros</h1>
+            <h3>Here is data based on your nutrition intake.</h3>
+        </div>
     </div>
     </main>
 
@@ -67,10 +74,15 @@
         <p><strong>Carbs: </strong><span id="carbs" class="carbs"></span><strong>  G</strong></p>
         <p><strong>Calories: </strong><span id="calories" class="calories"> </span><strong>  kCal</strong></p><br>
         
-        <input type="number" name="addValue">
+        <input type="number" name="addValue" placeholder="Type-in quantity/gram">
         <button id="modalAddBtn">Add</button>
         <button id="closeModal">Close</button>
     </dialog>
+    <!-- <div id="my-nutrition">
+        <div id="nutrition-box">
+
+        </div> -->
+    </div>
 </body>
 
 </html>

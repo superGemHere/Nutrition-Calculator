@@ -9,6 +9,7 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     
   }
+
  main{
   display: flexbox;
  }
@@ -37,7 +38,20 @@ body {
     align-items:center;
     justify-content:center;
     display: flex;
-    justify-items: baseline;
+}
+#deleteNutrition{
+  background-color: rgb(218, 161, 161);
+  font-size: medium;
+  font-weight: 600;
+  color: black;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 550px;
+}
+#deleteNutrition:hover{
+  background-color: floralwhite;
+  font-size: large;
+  text-shadow: 15px;
 }
   .fitness-modal{
     padding-top: 5px;
@@ -71,6 +85,7 @@ body {
 
   nav a:hover {
     color: rgb(224, 224, 210);
+    font-size: 30px;
    
   }
 
@@ -92,6 +107,26 @@ body {
   .add-btn{
     overflow-y: hidden;
   }
+
+  /* #my-nutrition{
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }  
+  #nutrition-box{
+    background-color: #000;
+    width: 200px;
+    height: 200px;
+    border: 10px;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }   */
   /* .details-btn{
     border: none;
     outline: 0;
