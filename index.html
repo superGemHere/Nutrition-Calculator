@@ -12,7 +12,7 @@
     <header>
         <div id="wrapper">
             <nav>
-                <div class="menu-links">
+                <div class="menu-links" style="display: block;">
                     <a href="/">Home</a>
                     <a href="/catalog">My Fitness Calculator</a>
                 </div>
@@ -59,6 +59,18 @@
     </div>
     </main>
 
+    <dialog class="modal" id="modal" style="width: 300px; justify-content: center; text-align: center;">
+        <h1 id="modalName"></h1>
+        <p style="color: gray;">Macro's per 100g.</p>
+        <p><strong>Protein: </strong><span id="protein" class="protein"></span><strong>  G</strong></p>
+        <p><strong>Fat: </strong><span id="fat" class="fat"></span><strong>  G</strong></p>
+        <p><strong>Carbs: </strong><span id="carbs" class="carbs"></span><strong>  G</strong></p>
+        <p><strong>Calories: </strong><span id="calories" class="calories"> </span><strong>  kCal</strong></p><br>
+        
+        <input type="number" name="addValue">
+        <button id="modalAddBtn">Add</button>
+        <button id="closeModal">Close</button>
+    </dialog>
 </body>
 
 </html>

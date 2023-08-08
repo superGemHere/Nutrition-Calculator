@@ -8,9 +8,12 @@ ${data.length > 0
             <div class="card">
             <div>
             <h1>${food.description}</h1>
-            <p style="text-transform: capitalize;"><strong>Calories :</strong> 24 g <strong>Fat :</strong> 13 g <Strong>Protein</Strong> 14 g <Strong>Carbs</Strong> 14 g</p>
+            <input type="number" name="protein"value="24" disabled style="display: none">
+            <input type="number" name="calories"value="343" disabled style="display: none">
+            <input type="number" name="fat"value="13" disabled style="display: none">
+            <input type="number" name="carbs"value="24" disabled style="display: none">
             <div>
-            <button class="add-btn">Calculate</button>
+            <button class="add-btn" @click="${onClick}">Calculate</button>
             </div>
         </div>
         </div>
@@ -40,4 +43,26 @@ async function getData () {
         alert(err.message)
         throw err;
     }
+}
+
+const modal = document.querySelector('#modal');
+function onClick(e){
+    let parent = e.target.parentNode.parentNode;
+    const modalName = modal.querySelector('#modalName');
+    const protein = modal.querySelector('#protein');
+    const fat = modal.querySelector('#fat');
+    const carbs = modal.querySelector('#carbs');
+    const calories = modal.querySelector('#calories');
+
+    let targProt = parent.querySelector('[name="protein"]')
+    let targCalories = parent.querySelector('[name="calories"]')
+    let targFats = parent.querySelector('[name="fat"]')
+    let targCarbs = parent.querySelector('[name="carbs"]')
+
+    // modalName.textContent = 
+    protein.textContent = targProt.value;
+    fat.textContent = targCalories.value;
+    carbs.textContent = targFats.value;
+    calories.textContent = targCarbs.value;
+    modal.showModal();
 }
