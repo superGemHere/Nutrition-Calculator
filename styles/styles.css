@@ -1,21 +1,29 @@
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 body {
   background-color: bisque;
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
     padding: 0;
-    overflow: auto;
     width: 100%;
     font-family: 'Bebas Neue', sans-serif;
     
   }
 
  main{
-  display: flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x:hidden;
+  overflow-y: auto;
  }
 
 
   header {
+    position:sticky;
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -25,7 +33,7 @@ body {
   }
 
   nav {
- 
+    position: static;
     display: flex;
     justify-content: space-between;
     height: 45px;
@@ -106,6 +114,19 @@ body {
   }
   .add-btn{
     overflow-y: hidden;
+  }
+  #foodList{
+   background-color: black;
+  }
+  #foodList li{
+    margin: 5px;
+    padding: 5px;
+    color: rgba(105, 207, 41, 0.767);
+  }
+  #showDetails{
+    float: right;
+    background-color: #fff;
+    font-weight:800 ;
   }
 
   /* #my-nutrition{

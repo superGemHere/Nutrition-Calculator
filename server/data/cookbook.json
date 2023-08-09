@@ -1,20 +1,131 @@
 {
 	"recipes": {
 		"01": {
-            "_id": "01",
-            "name": "Recipe 1",
-            "img": "assets/lasagna.jpg"
+            "name": "Lasagna",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 278,
+            "protein" : 11,
+            "carbs": 50,
+            "fats": 3
         },
-        "02": {
-            "_id": "02",
-            "name": "Recipe 2",
-            "img": "assets/roast.jpg"
+      
+		"02": {
+            "name": "Beef steak",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 206,
+            "protein" : 34.93,
+            "carbs": 0,
+            "fats": 6.3
         },
-        "03": {
-            "_id": "03",
-            "name": "Recipe 3",
-            "img": "assets/fish.jpg"
+      
+		"03": {
+            "name": "Pork steak",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 332,
+            "protein" : 19,
+            "carbs": 10,
+            "fats": 24
+        },
+      
+		"04": {
+            "name": "Pork ribs",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 213,
+            "protein" : 7.9,
+            "carbs": 2.2,
+            "fats": 19.2
+        },
+      
+		"05": {
+            "name": "Cooked Shark",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 228,
+            "protein" : 18.62,
+            "carbs": 6.3,
+            "fats": 13.82
+        },
+      
+		"06": {
+            "name": "Cooked White Fish",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 172,
+            "protein" : 24.47,
+            "carbs": 0,
+            "fats": 7.51
+        },
+      
+		"07": {
+            "name": "Cooked Sturgeon",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 135,
+            "protein" : 20.70,
+            "carbs": 0,
+            "fats": 5.18
+        },
+      
+		"08": {
+            "name": "Asperagus",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 15,
+            "protein" : 1.8,
+            "carbs": 2.48,
+            "fats": 0.18
+        },
+      
+		"09": {
+            "name": "Bean",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 33,
+            "protein" : 4.83,
+            "carbs": 4.72,
+            "fats": 0.58
+        },
+      
+		"10": {
+            "name": "Green Bean",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 35,
+            "protein" : 1.89,
+            "carbs": 7.88,
+            "fats": 0.28
+        },
+      
+		"11": {
+            "name": "Broccoli",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 34,
+            "protein" : 2.82,
+            "carbs": 6.64,
+            "fats": 0.37
+        },
+      
+		"12": {
+            "name": "Avocado",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 160,
+            "protein" : 2,
+            "carbs": 8.53,
+            "fats": 14.66
+        },
+      
+		"13": {
+            "name": "Muscat Grapes",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 57,
+            "protein" : 0.81,
+            "carbs": 13.93,
+            "fats": 0.47
+        },
+      
+		"14": {
+            "name": "Wild Apples",
+            "imageUrl": "https://www.freepik.com/icon/salad_2515150#fromView=keyword&term=Food&page=1&position=3",
+            "calories": 76,
+            "protein" : 0.40,
+            "carbs": 19.95,
+            "fats": 0.30
         }
+      
 	},
     "details": {
         "01": {

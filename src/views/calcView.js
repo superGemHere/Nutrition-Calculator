@@ -1,23 +1,37 @@
 import {html, render} from "../lib.js";
 
-{/* <img src="${food.imgUrl}"></img> */}
 
 const catalogTemplate = (data) => html`
 ${data.length > 0 
-? data.map( food => html`<div class="container">
-            <div class="card">
+    ? html`<div class="container">
+        ${data.map(food => html`<div class="card">
             <div>
-            <h1>${food.description}</h1>
-            <input type="number" name="protein"value="24" disabled style="display: none">
-            <input type="number" name="calories"value="343" disabled style="display: none">
-            <input type="number" name="fat"value="13" disabled style="display: none">
-            <input type="number" name="carbs"value="24" disabled style="display: none">
-            <div>
-            <button class="add-btn" @click="${onClick}">Calculate</button>
-            </div>
-        </div>
-        </div>
-        </div>`) 
+            <img src="${food.imgUrl}" alt="foodImage">
+             <h1>${food.description}</h1>
+             <input type="number" name="protein"value="24" disabled style="display: none">
+             <input type="number" name="calories"value="343" disabled style="display: none">
+             <input type="number" name="fat"value="13" disabled style="display: none">
+             <input type="number" name="carbs"value="24" disabled style="display: none">
+             <div>
+             <button class="add-btn" @click="${onClick}">Calculate</button>
+             </div>
+         </div>
+         </div>`)}
+    </div>`
+// ? data.map( food => html`<div class="container">
+//             <div class="card">
+//             <div>
+//             <h1>${food.description}</h1>
+//             <input type="number" name="protein"value="24" disabled style="display: none">
+//             <input type="number" name="calories"value="343" disabled style="display: none">
+//             <input type="number" name="fat"value="13" disabled style="display: none">
+//             <input type="number" name="carbs"value="24" disabled style="display: none">
+//             <div>
+//             <button class="add-btn" @click="${onClick}">Calculate</button>
+//             </div>
+//         </div>
+//         </div>
+//         </div>`) 
 : html`<h1>There is no data to show.</h1>`}`;
 
 
