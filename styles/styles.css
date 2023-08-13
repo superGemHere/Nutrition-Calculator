@@ -128,6 +128,9 @@ body {
     background-color: #fff;
     font-weight:800 ;
   }
+  #showDetails:hover{
+    background-color: aqua;
+  }
 
   /* #my-nutrition{
     width: 250px;
