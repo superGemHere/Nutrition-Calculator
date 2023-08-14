@@ -43,7 +43,7 @@ export const showCatalog = async () => {
 }
 
 async function getData () {
-    const url = 'https://api.nal.usda.gov/fdc/v1/foods/list?api_key=DEMO_KEY';
+    const url = 'http://simple-grocery-store-api.online/products';
     try {
         const response = await fetch(url);
         if (!response.ok){
